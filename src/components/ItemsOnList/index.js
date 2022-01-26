@@ -1,1 +1,1 @@
-export {default} from './ItemsonList';
+export {default} from './ItemsOnList';
