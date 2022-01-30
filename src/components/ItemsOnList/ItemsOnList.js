@@ -1,6 +1,4 @@
-import React from 'react';
 import styles from './ItemsOnList.module.css';
-
 
 const ItemsOnList = ({ name, image_url, token_id}) => (
         <div key={token_id} className={styles.itemContainer}>

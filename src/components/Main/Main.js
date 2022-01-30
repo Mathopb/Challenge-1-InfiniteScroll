@@ -1,12 +1,12 @@
-import React, { useEffect } from 'react';
-import useCallApi from '../CustomHooks/useCallApi';
+import { useEffect } from 'react';
+import useCallApi from '../../hooks/useCallApi';
 import ItemsOnList from '../ItemsOnList';
 import Spinner from '../Spinner';
 import styles from './Main.module.css';
 
 const Main = () => {
 
-    const {data, loading, startLoading, getAllData} = useCallApi();
+    const { data, loading, startLoading, getAllData } = useCallApi();
 
     useEffect(() => {
 
@@ -24,8 +24,6 @@ const Main = () => {
 
     }, []);
 
-    console.log ('data', data);
-
     const isLoading = (loading) ? <Spinner /> : null;
 
     return (
@@ -33,7 +31,7 @@ const Main = () => {
             <div className={styles.mainContainer}>
                 <div className={styles.dataContainer}>
                     {
-                        data && data.map(({ name, image_url, token_id }) =>
+                        data.map(({ name, image_url, token_id }) =>
                             <ItemsOnList
                                 key={token_id}
                                 name={name}
