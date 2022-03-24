@@ -29,6 +29,10 @@ const Main = () => {
     return (
         <div className={styles.outsideContainer}>
             <div className={styles.mainContainer}>
+                <div className={styles.containerHeader}>
+                    <h1>Fake Bored Ape Yacht Club</h1>
+                    <h3> An Endless Scrolling NFT </h3>
+                </div>
                 <div className={styles.dataContainer}>
                     {
                         data.map(({ name, image_url, token_id }) =>

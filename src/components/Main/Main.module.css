@@ -17,6 +17,14 @@
   padding: 0.5rem;
 }
 
+.containerHeader {
+  text-align: center;
+  background-color: whitesmoke;
+  margin-bottom: 3rem;
+  border-radius: 3rem;
+  padding: 0.1rem;
+}
+
 /* //////////////////////////////////////////////// */
 
 @media screen and (max-width: 768px) {
